@@ -1,8 +1,12 @@
 <?php 
 	/*********************************************************
-	*	1. Corrigir toggle (jquery e jquery ui)
-	*	2. 
-	*	3. 
+	*	Log
+	*
+	*	1. Realizar testes backend
+	*	2. Incorporar AngularJS
+	*	3. Incrementar pontuação
+	*	4. Criar framework
+	*
 	*********************************************************/
 
 
@@ -20,9 +24,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Newsmart</title>
-		
-		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
-		<link rel="stylesheet" href="newsmart.css"> 
+		<link rel="stylesheet" href="waffle.css"> 
 	</head>
 	<body>
 		<div class="container">
@@ -71,6 +73,6 @@
 		<!-- 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
 		<script src="code.js"></script>
-		<script src="novo.js"></script>
+		<!-- <script src="novo.js"></script> -->
 	</body>
 </html>

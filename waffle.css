@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, p {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Helvetica,Arial,sans-serif;
 	font-weight: 500;
 	line-height: 1.1;
 	color: black;
@@ -23,6 +23,7 @@ h1, h2, h3, p {
 
 p {
 	margin: 0 0 10px;
+	line-height: 170%;
 }
 
 img {
@@ -36,6 +37,8 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+
 
 /******************************************
 
@@ -79,7 +82,7 @@ img {
 
 #draggable2, #draggable-nonvalid { 
 	width: 300px; 
-	height: 40px; 
+	height: 20px; 
 	padding: 0.7em; 
 	margin: 10px; 
 	border-radius: 5px;
@@ -89,14 +92,16 @@ img {
 
 
 .ui-state-highlight {
-	background-color: #ade86d !important;
-	border: 2px solid #ade86d !important;
-
+	background-color: #ade86d;
+	border: 2px solid #ade86d;
 }
 
 
 .ui-state-wrong {
-	background-color: #ade86d !important;
-	border: 2px solid #ade86d !important;
+	background-color: #ade86d;
+	border: 2px solid #ade86d
+}
 
+.correct {
+	background-color: #ade86d !important;
 }

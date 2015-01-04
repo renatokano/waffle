@@ -1,19 +1,50 @@
-$(document).ready(function() {
-  $("#q-box1").hide();
-});
+/************************************************
+
+  Global Variables
+
+************************************************/
+
+var i = 5;
+var deg = 0;
+
+/************************************************
+
+  Document Ready Function
+
+************************************************/
 
 $(document).ready(function() {
+  $("#q-box1").hide();
   $("#q-drag-drop1").click(function() {
-    $("#q-box1").show();
+    $("#q-box1").toggle("clip", 1200);
+    if (deg === 0){
+      $(".arrow").css('transform','rotate(' + 90 + 'deg)');
+      deg = 1;
+    } else {
+      $(".arrow").css('transform','rotate(' + 0 + 'deg)');
+      deg = 0;
+    };
   });
 });
 
-$(function() {
- $('#q-drag-drop1').click(function(){
-   $(".arrow").attr('src',"img/arrow.png");
- });
-});
+/************************************************
 
+  General Functions
+
+************************************************/
+
+function TestFinishedLesson(i){
+  if (i === 6){
+    alert("Exercício Finalizado!");
+  }
+}
+
+
+/************************************************
+
+  Functions activated by events
+
+************************************************/
 
 $(function() {
   // int i = 0;
@@ -22,6 +53,9 @@ $(function() {
   });
   // Accept all to drag
   $( "#draggable2, #draggable-nonvalid" ).draggable({
+      containment:"#q-box1",
+      snap: true,
+      snapMode: "inner"
   });
   // Accept just droppable class to drop
   $( "#droppable" ).droppable({
@@ -32,18 +66,16 @@ $(function() {
     drop: function( event, ui ) {
       $( this )
         .addClass( "ui-state-highlight" )
-        .find( "p" )
-          .html( "Correct!" );
-      i = 1;
-      alert("Correto!!! +" + i + " xp");
-      $( "#draggable2" ).draggable( 
+          .find( "p" )
+            .html( "Parabéns!" );
+      $( "#draggable2, #draggable-nonvalid" ).draggable( 
         "disable"
       );
+      i++;
+      $("#draggable2").addClass('correct');
+      alert("Correto!!! +" + i + " xp");
+      TestFinishedLesson(i);
+
     }
-    // out: function( event, ui ) {
-    //   $(this)
-    //     .find("p")
-    //       .html("Tentar novamente?");
-    //}
   });
 });

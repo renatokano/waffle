@@ -93,3 +93,15 @@ $(function(){
       connectWith: "#ms1Answer"
   }).disableSelection();
 });
+
+/************************************************
+
+  Functions activated by events (Order)
+
+************************************************/
+
+$(function(){
+  $("#o1Answer").sortable({
+      connectWith: "#o1Answer"
+  }).disableSelection();
+});

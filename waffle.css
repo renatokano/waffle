@@ -167,3 +167,45 @@ img {
 	background-color: #95b91a; 
 	cursor: pointer;
 }
+
+/******************************************
+
+	APPLICATION (Order)
+
+******************************************/
+
+#o1 {
+	height: auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+#o1container {
+}
+
+#o1Answer li {
+	background-color: #ebcdf9;
+	margin: 5px 1px;
+	height: auto;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+#o1Answer li span {
+	float: right;
+	/*border-radius: 15px;
+	border: 1px solid silver; */
+	color: silver;
+}
+
+#o1Answer li span:hover {
+	color: black;
+}
+
+
+
+#o1Elements {
+	padding-top: 20px;
+}

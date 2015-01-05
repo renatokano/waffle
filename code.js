@@ -42,7 +42,7 @@ function TestFinishedLesson(i){
 
 /************************************************
 
-  Functions activated by events
+  Functions activated by events (Drag-and-drop)
 
 ************************************************/
 
@@ -78,4 +78,18 @@ $(function() {
 
     }
   });
+});
+
+/************************************************
+
+  Functions activated by events (Make Sentence)
+
+************************************************/
+
+$(function(){
+  // other option:
+  // $("div:regex(class, .*sd.*)").draggable();
+  $("#ms1Answer").sortable({
+      connectWith: "#ms1Answer"
+  }).disableSelection();
 });

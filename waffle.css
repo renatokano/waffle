@@ -42,9 +42,14 @@ img {
 
 /******************************************
 
-	APPLICATION
+	APPLICATION (Drag-and-Drop)
 
 ******************************************/
+
+* {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
 
 .q-drag-drop {
 	margin: 2px;
@@ -104,4 +109,61 @@ img {
 
 .correct {
 	background-color: #ade86d !important;
+}
+
+/******************************************
+
+	APPLICATION (Make Sentence)
+
+******************************************/
+
+.container {
+	width: 90%;
+}
+
+#ms1 {
+	height: auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+#ms1container {
+	overflow: hidden;	/* corrigir referência */
+}
+
+#ms1Answer li {
+	display: inline-block;
+	float: left;  /* correção para bug */
+	background-color: #ebcdf9;
+	margin: 5px 1px;
+	height: auto;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+
+}
+
+#ms1Elements {
+	padding-top: 20px;
+}
+
+.btnSend{
+	border: 1px solid #999999; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size:14px;
+	padding: 10px 25px 10px 25px; 
+	text-decoration:none; 
+	display: inline-block;
+	color: #000000;
+	background-color: #b6e026; 
+	margin: 20px 50px;
+
+}
+
+.btnSend:hover{
+	border:1px solid #7A7A7A;
+	background-color: #95b91a; 
+	cursor: pointer;
 }

@@ -183,6 +183,10 @@ img {
 #o1container {
 }
 
+#o1Answer {
+	padding-left: 0px;
+}
+
 #o1Answer li {
 	background-color: #ebcdf9;
 	margin: 5px 1px;
@@ -191,13 +195,14 @@ img {
 	border-radius: 10px;
 	cursor: pointer;
 	list-style-type: none;
+	text-align: center;
 }
 
 #o1Answer li span {
 	float: right;
 	/*border-radius: 15px;
 	border: 1px solid silver; */
-	color: silver;
+	color: black;
 }
 
 #o1Answer li span:hover {

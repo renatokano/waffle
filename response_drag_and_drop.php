@@ -23,12 +23,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Newsmart</title>
+		<title>Waffle</title>
 		<link rel="stylesheet" href="waffle.css"> 
 	</head>
 	<body>
 		<div class="container">
-			<h1>Newsmart</h1>
+			<h1>Waffle</h1>
 			<h2>Descobrimento do Brasil</h2>
 			<br>	
 			<div>
